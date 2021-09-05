@@ -20,6 +20,9 @@ public class HelloController {
 	
 	@GetMapping("/hello")
 	public String sayHello() {
+		MemberEntity memberEntity = new MemberEntity();
+		memberEntity.setName("Mary");
+		memberService.save(memberEntity);
 		return "Hello";
 	}
 	

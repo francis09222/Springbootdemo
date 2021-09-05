@@ -8,4 +8,6 @@ public interface MemberService {
 
 	public List<MemberEntity> get();
 	
+	public void save(MemberEntity memberEntity);
+	
 }
